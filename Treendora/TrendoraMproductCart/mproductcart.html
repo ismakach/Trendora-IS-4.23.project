@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zarina Man Shirt - Trendora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mproductcart.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="site-wrapper">
+    
+    <!-- Header Nav (From provided file) -->
+    <header class="main-header">
+      <div class="container header-inner">
+        <div class="flex items-center">
+          <div class="logo-img">
+            <img src="../images/logoTrendora.png" alt="Trendora logo" class="logo-img" width="120" height="40">
+          </div>
+          <!-- Burger Menu Button (Mobile Left) -->
+          <button class="burger-btn" style="margin-right: 16px;">
+            <i data-lucide="menu" class="burger-icon"></i>
+          </button>
+
+          <div class="logo-container">
+            <!-- Location Display -->
+            <div class="location-display">
+              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+              <span>Atyrau</span>
+            </div>
+          </div>
+        </div>
+        
+        <nav class="nav-links">
+          <a href="../trendoraPageOne/PageOne.html" class="nav-link">Home</a>
+          <a href="../trendoraAboutUs/about-us.html" class="nav-link">About us</a>
+          <a href="../trendoraPageTwo/pagetwo.html" class="nav-link">Women</a>
+          <a href="../TrendoraMproduct2/mproduct2.html" class="nav-link active">Men</a>
+        </nav>
+
+        <div class="header-actions relative">
+          <!-- Profile Trigger -->
+          <button class="profile-trigger">
+              <div class="user-avatar-small">
+              	<img src="../images/suetolog.png" alt="User">
+            </div>
+            <span class="profile-text">Profile</span>
+          </button>
+
+          <!-- Gray Menu Popup -->
+          <div class="gray-menu-popup">
+            <div class="gray-menu-header">
+              <div class="user-avatar">
+                <img src="../images/suetolog.png" alt="User">
+              </div>
+              <div class="user-info">
+                <span class="user-name">Suetolog</span>
+              </div>
+              <button class="close-gray-menu">
+                <i data-lucide="x" color="white" style="width: 16px; height: 16px;"></i>
+              </button>
+            </div>
+            
+            <div class="gray-menu-items">
+              <div class="gray-menu-item">
+                <i data-lucide="shopping-cart" style="width: 16px; height: 16px;"></i>
+                <span>Cart</span>
+              </div>
+              <div class="gray-menu-item">
+                <i data-lucide="bell" style="width: 16px; height: 16px;"></i>
+                <span>Notifications</span>
+              </div>
+              <div class="gray-menu-item">
+                <i data-lucide="wallet" style="width: 16px; height: 16px;"></i>
+                <span>Wallet</span>
+              </div>
+              <div class="gray-menu-item">
+                <i data-lucide="settings" style="width: 16px; height: 16px;"></i>
+                <span>Settings</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu (Left) -->
+    <div class="mobile-menu">
+      <a href="#" class="mobile-nav-link">Home</a>
+      <a href="#" class="mobile-nav-link">About us</a>
+      <a href="#" class="mobile-nav-link">Women</a>
+      <a href="#" class="mobile-nav-link">Men</a>
+      <hr style="border-color: var(--color-gray-100);">
+      <a href="#" class="mobile-nav-link">Login</a>
+      <a href="#" class="mobile-nav-link">Register</a>
+    </div>
+
+    <!-- Top Bar (Black) -->
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="categories-list">
+          <button class="cat-link-btn cat-link">
+            New
+          </button>
+          <span class="cat-link">Clothes</span>
+          <span class="cat-link">Shoes</span>
+          <span class="cat-link">Accessories</span>
+          <span class="cat-link">Brand</span>
+          <span class="cat-link">Premium</span>
+          <span class="cat-link">Sport</span>
+          <span class="cat-link">Made in KZ</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search" class="search-input">
+          <button class="search-btn">
+            <i data-lucide="search" style="width: 14px; height: 14px;"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mega Menu Dropdown -->
+    <div class="mega-menu">
+      <div class="container">
+        <div class="mega-menu-grid">
+          <div class="mega-menu-col">
+            <h3 class="mega-menu-title">Clothes</h3>
+            <ul class="mega-menu-list">
+              <li><a href="#">Pants</a></li>
+              <li><a href="#">Outerwear</a></li>
+              <li><a href="#">Jumpers, sweaters, cardigans</a></li>
+              <li><a href="#">Jeans</a></li>
+            </ul>
+          </div>
+          <div class="mega-menu-col">
+            <h3 class="mega-menu-title">Shoes</h3>
+            <ul class="mega-menu-list">
+              <li><a href="#">Boots</a></li>
+              <li><a href="#">Sneakers</a></li>
+              <li><a href="#">Shoes</a></li>
+            </ul>
+          </div>
+          <div class="mega-menu-col">
+            <h3 class="mega-menu-title">Accessories</h3>
+            <ul class="mega-menu-list">
+              <li><a href="#">Underwear</a></li>
+              <li><a href="#">Headwear</a></li>
+            </ul>
+          </div>
+            <div class="mega-menu-col">
+              <h3 class="mega-menu-title">&nbsp;</h3>
+              <ul class="mega-menu-list">
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Sport</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        Home / Men's / Clothes / <span>Zarina Man</span>
+      </div>
+
+      <!-- Main Product Grid -->
+      <div class="product-grid">
+        
+        <!-- Left: Images -->
+        <div class="product-images">
+          <img src="../images/manlookingdown.png" alt="Zarina Man Shirt Front" class="product-image">
+          <img src="../images/manlookingright.png" alt="Zarina Man Shirt Full Body" class="product-image">
+        </div>
+
+        <!-- Right: Info -->
+        <div class="product-info">
+          
+          <div class="product-header">
+            <div class="product-title-row">
+              <h1 class="product-title">Zarina Man</h1>
+              <div class="rating-stars">
+                 <i data-lucide="star" fill="black" size="14"></i>
+                 <i data-lucide="star" fill="black" size="14"></i>
+                 <i data-lucide="star" fill="black" size="14"></i>
+                 <i data-lucide="star" fill="black" size="14"></i>
+                 <i data-lucide="star" size="14"></i>
+                 <span style="font-size: 10px; margin-left: 4px; color: #666;">88 reviews</span>
+              </div>
+            </div>
+            <p class="product-subtitle">Shirt</p>
+          </div>
+
+          <div class="product-price">16 700 ₸</div>
+
+          <div class="product-selectors">
+            <!-- Color Selector -->
+            <div class="selector-row">
+              <div class="flex items-center">
+                <div class="color-preview">
+                    <!-- Little image of the fabric texture -->
+                    <img src="../images/manlookingright.png" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <span>Grey</span>
+              </div>
+              <i data-lucide="chevron-down" size="16"></i>
+            </div>
+
+            <!-- Size Selector -->
+            <div class="selector-row">
+              <span style="color: #999;">Choose size</span>
+              <i data-lucide="chevron-down" size="16"></i>
+            </div>
+          </div>
+
+          <div class="add-to-cart-row">
+            <button class="btn-add-cart">Add to cart</button>
+            <button class="btn-wishlist">
+              <i data-lucide="heart" fill="#E62E2D" color="#E62E2D" size="20"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Similar Section -->
+      <div class="similar-section">
+        <div class="flex justify-between items-center mb-4">
+             <h3 class="similar-title">Similar</h3>
+        </div>
+       
+        <div class="similar-grid">
+          <!-- Item 1 -->
+          <div class="similar-card">
+            <div class="relative">
+              <img src="../images/firstguy.png" class="similar-image">
+              <button style="position: absolute; top: 8px; right: 8px;">
+                 <i data-lucide="heart" size="14"></i>
+              </button>
+            </div>
+            <div class="similar-price">
+              <span class="similar-price-orig">41000₸</span>
+              41 000 ₸
+            </div>
+            <div class="similar-info">
+              <div>Collins Mens Jeans</div>
+              <div>Shirt</div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="similar-card">
+            <div class="relative">
+              <img src="../images/secondguy.png" class="similar-image">
+              <button style="position: absolute; top: 8px; right: 8px;">
+                 <i data-lucide="heart" size="14"></i>
+              </button>
+            </div>
+            <div class="similar-price">
+              <span class="similar-price-orig">34 700₸</span>
+              16 700 ₸
+            </div>
+            <div class="similar-info">
+              <div>De Facto</div>
+              <div>Shirt</div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="similar-card">
+            <div class="relative">
+              <img src="../images/thirdguy.png" class="similar-image">
+              <button style="position: absolute; top: 8px; right: 8px;">
+                 <i data-lucide="heart" size="14"></i>
+              </button>
+            </div>
+            <div class="similar-price">
+              <span class="similar-price-orig">14 000₸</span>
+              10 000 ₸
+            </div>
+            <div class="similar-info">
+              <div>Zarina Man</div>
+              <div>Polo</div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="similar-card">
+            <div class="relative">
+              <img src="../images/fourthguy.png" class="similar-image">
+              <button style="position: absolute; top: 8px; right: 8px;">
+                 <i data-lucide="heart" size="14"></i>
+              </button>
+            </div>
+            <div class="similar-price">
+              <span class="similar-price-orig">44 700₸</span>
+              36 000 ₸
+            </div>
+            <div class="similar-info">
+              <div>Studio 29</div>
+              <div>Shirt</div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="similar-card">
+            <div class="relative">
+              <img src="../images/fifthguy.png" class="similar-image">
+              <button style="position: absolute; top: 8px; right: 8px;">
+                 <i data-lucide="heart" size="14"></i>
+              </button>
+            </div>
+            <div class="similar-price">
+              <span class="similar-price-orig">45 000₸</span>
+              24 300 ₸
+            </div>
+            <div class="similar-info">
+              <div>Zara</div>
+              <div>Shirt</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reviews Section -->
+      <section class="reviews-section">
+        <h3 class="reviews-title">Reviews</h3>
+
+        <div class="reviews-summary">
+          <!-- Overall Rating -->
+          <div style="text-align: center;">
+             <div style="font-size: 12px; font-weight: 500;">5.0 Overall Rating</div>
+             <div class="flex gap-1 justify-center mt-2">
+                 <i data-lucide="star" fill="black" size="16"></i>
+                 <i data-lucide="star" fill="black" size="16"></i>
+                 <i data-lucide="star" fill="black" size="16"></i>
+                 <i data-lucide="star" fill="black" size="16"></i>
+                 <i data-lucide="star" fill="black" size="16"></i>
+             </div>
+          </div>
+
+          <!-- Progress Bars -->
+          <div class="progress-bars">
+            <div class="progress-row">
+              <span style="width: 10px;">5</span>
+              <i data-lucide="star" fill="black" size="10"></i>
+              <div class="progress-bg"><div class="progress-fill" style="width: 100%"></div></div>
+              <span style="width: 10px;">2</span>
+            </div>
+            <div class="progress-row">
+              <span style="width: 10px;">4</span>
+              <i data-lucide="star" fill="black" size="10"></i>
+              <div class="progress-bg"></div>
+              <span style="width: 10px;">0</span>
+            </div>
+             <div class="progress-row">
+              <span style="width: 10px;">3</span>
+              <i data-lucide="star" fill="black" size="10"></i>
+              <div class="progress-bg"></div>
+              <span style="width: 10px;">0</span>
+            </div>
+             <div class="progress-row">
+              <span style="width: 10px;">2</span>
+              <i data-lucide="star" fill="black" size="10"></i>
+              <div class="progress-bg"></div>
+              <span style="width: 10px;">0</span>
+            </div>
+             <div class="progress-row">
+              <span style="width: 10px;">1</span>
+              <i data-lucide="star" fill="black" size="10"></i>
+              <div class="progress-bg"></div>
+              <span style="width: 10px;">0</span>
+            </div>
+          </div>
+
+          <!-- Fit Slider -->
+          <div class="size-fit-slider">
+             <div style="font-size: 12px; font-weight: 500; margin-bottom: 8px;">Runs slightly large</div>
+             <div class="progress-bg" style="height: 6px; position: relative;">
+               <div style="position: absolute; left: 70%; top: -2px; width: 10px; height: 10px; background: black; border-radius: 50%;"></div>
+             </div>
+             <div class="slider-labels">
+               <span>Run small</span>
+               <span>Run large</span>
+             </div>
+          </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="reviews-filter-bar">
+          <div class="flex items-center gap-2" style="font-size: 14px; font-weight: 600;">
+            Filter <i data-lucide="menu" size="14"></i>
+          </div>
+          <div class="flex items-center gap-2" style="font-size: 14px;">
+            Sort by: <i data-lucide="chevron-down" size="14"></i>
+          </div>
+        </div>
+
+        <!-- Review 1 -->
+        <div class="review-item">
+          <div class="reviewer-col">
+            <div class="reviewer-name">ElizabethRBklyn</div>
+            <div class="verified-badge">
+              <i data-lucide="check-circle" size="12" fill="black" color="white"></i> Verified
+            </div>
+            <div class="reviewer-meta">
+              Height: 5'5" - 5'7"<br>
+              Weight (lbs): 160 - 180 lb<br>
+              Body Type: Petite<br><br>
+              Size Purchased: L<br>
+              Usual Size: L
+            </div>
+          </div>
+          <div class="review-content">
+             <div class="review-content-header">
+                <div class="flex gap-1">
+                   <i data-lucide="star" fill="black" size="12"></i>
+                   <i data-lucide="star" fill="black" size="12"></i>
+                   <i data-lucide="star" fill="black" size="12"></i>
+                   <i data-lucide="star" fill="black" size="12"></i>
+                   <i data-lucide="star" fill="black" size="12"></i>
+                </div>
+                <div class="review-date">14 days ago</div>
+             </div>
+             <div class="review-text-title">Warm and very attractive on</div>
+             <div class="review-text-body">
+               Got this to keep my husband warm on those chilly late fall days. He loves it as it not only is pretty warm but he looks good in it and he knows it.
+             </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-item">
+          <div class="reviewer-col">
+            <div class="reviewer-name">Anonymous</div>
+            <div class="verified-badge">
+              <i data-lucide="check-circle" size="12" fill="black" color="white"></i> Verified
+            </div>
+            <div class="reviewer-meta">
+              Height: 5'9" - 5'11"<br>
+              Weight (lbs): 180 - 190 lb<br>
+              Body Type: Petite<br><br>
+              Size Purchased: L<br>
+              Usual Size: L
+            </div>
+          </div>
+          <div class="review-content">
+             <div class="review-content-header">
+                <div class="flex gap-1">
+                   <i data-lucide="star" fill="black" size="12"></i>
+                   <i data-lucide="star" fill="black" size="12"></i>
+                   <i data-lucide="star" fill="black" size="12"></i>
+                   <i data-lucide="star" fill="black" size="12"></i>
+                   <i data-lucide="star" fill="black" size="12"></i>
+                </div>
+                <div class="review-date">14 days ago</div>
+             </div>
+             <div class="review-text-title">Super comfy</div>
+             <div class="review-text-body">
+               Great quality, warm and super comfy. Got the XL cuz I have a large back and it fits perfect. It does run a bit oversized which is good.
+             </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer (From provided file) -->
+    <footer class="footer">
+        <div class="container footer-grid">
+          
+          <div style="padding-right: 80px;">
+            <h4 class="footer-h4">10% discount for subscribing to new releases and promotions</h4>
+            <div class="subscribe-form">
+              <input type="email" placeholder="Email" class="email-input" />
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+            <p class="text-gray" style="font-size: 10px; margin-top: 8px;">Terms of the promotion</p>
+          </div>
+
+          <div>
+            <h4 class="footer-h4">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">Order status by number</a></li>
+              <li><a href="#">My Orders</a></li>
+              <li><a href="#">Delivery terms</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">How to place an order</a></li>
+              <li><a href="#">Trendora Support Center</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-h4">About us</h4>
+            <ul class="footer-links" style="margin-bottom: 32px;">
+              <li><a href="#">Public offer</a></li>
+              <li><a href="#">Vacancies</a></li>
+            </ul>
+
+            <h4 class="footer-h4">Partners</h4>
+            <ul class="footer-links">
+              <li><a href="#">Become a marketplace seller</a></li>
+              <li><a href="#">FAQ's</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </footer>
+
+    <!-- Cart Sidebar & Overlay (Integrated with provided design) -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+      <div class="cart-header">
+        <h2 class="cart-title">Your Cart</h2>
+        <button class="cart-close-btn" id="close-cart-btn">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items-list">
+        <!-- Cart items dynamically injected here -->
+      </div>
+      
+      <div class="cart-recommendations">
+        <div class="rec-title">Before You Do</div>
+        <div class="rec-item">
+            <img src="../images/adidasBeanie.png" class="rec-image" alt="Beanie">
+            <div class="rec-info">
+                <div class="rec-name">Adidas Originals Beanie</div>
+                <div class="rec-price-meta">One Size | Charmway Blue</div>
+                <div class="rec-price">12000₸</div>
+            </div>
+            <button class="rec-add-btn" id="add-beanie-btn">ADD</button>
+        </div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="subtotal-row">
+           <span>Subtotal</span>
+           <span id="cart-subtotal-val">0₸</span>
+        </div>
+        <button class="checkout-btn">Continue</button>
+        <div class="cart-note">Psst, get it now before it sells out.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="mproductcart.js"></script>
+</body>
+</html>

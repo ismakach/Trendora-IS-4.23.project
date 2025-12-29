@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Trendora</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aboutus.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-inner">
+            <div class="header-left">
+                <div class="logo-img">
+                    <img src="../images/logoTrendora.png" alt="Trendora logo" class="logo-img" width="120" height="40">
+                </div>
+                <button class="burger-btn" id="burgerBtn" onclick="toggleMobileMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="location-display">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Atyrau</span>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="../trendoraPageOne/PageOne.html" class="nav-link">Home</a>
+                <a href="./about-us.html" class="nav-link active">About us</a>
+                <a href="../trendoraPageTwo/pagetwo.html" class="nav-link">Women</a>
+                <a href="../TrendoraMproduct2/mproduct2.html" class="nav-link">Men</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="profile-trigger" id="profileTrigger" onclick="toggleProfileMenu()">
+                    <div class="user-avatar-small">
+                        <img src="../images/suetolog.png" alt="User">
+                    </div>
+                    <span>Profile</span>
+                </button>
+
+                <div class="gray-menu-popup" id="profileMenu">
+                    <div class="gray-menu-header">
+                        <div class="user-avatar">
+                            <img src="../images/suetolog.png" alt="User">
+                        </div>
+                        <div class="user-info">
+                            <span>Suetolog</span>
+                        </div>
+                        <button onclick="closeProfileMenu()" style="border: none; background: none; color: white; cursor: pointer;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="gray-menu-items">
+                        <div class="gray-menu-item">
+                            <i data-lucide="shopping-cart" style="width: 16px; height: 16px;"></i>
+                            <span>Cart</span>
+                        </div>
+                        <div class="gray-menu-item">
+                            <i data-lucide="bell" style="width: 16px; height: 16px;"></i>
+                            <span>Notifications</span>
+                        </div>
+                        <div class="gray-menu-item">
+                            <i data-lucide="wallet" style="width: 16px; height: 16px;"></i>
+                            <span>Wallet</span>
+                        </div>
+                        <div class="gray-menu-item">
+                            <i data-lucide="settings" style="width: 16px; height: 16px;"></i>
+                            <span>Settings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../trendoraPageOne/PageOne.html" class="mobile-nav-link">Home</a>
+        <a href="./about-us.html" class="mobile-nav-link">About us</a>
+        <a href="../trendoraPageTwo/pagetwo.html" class="mobile-nav-link">Women</a>
+        <a href="../TrendoraMproduct2/mproduct2.html" class="mobile-nav-link">Men</a>
+        <hr style="border: none; border-top: 1px solid var(--color-gray-100);">
+        <a href="../TrendoraLogin/login.html" class="mobile-nav-link">Login</a>
+        <a href="../TrendoraRegister/register.html" class="mobile-nav-link">Register</a>
+    </div>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        The cold weather is coming, time to warm up with discounts of up to 50%
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <div class="categories-list">
+                <button class="cat-link" id="newBtn" onclick="toggleMegaMenu()" style="cursor: pointer;">New</button>
+                <span class="cat-link">Clothes</span>
+                <span class="cat-link">Shoes</span>
+                <span class="cat-link">Accessories</span>
+                <span class="cat-link">Brand</span>
+                <span class="cat-link">Premium</span>
+                <span class="cat-link">Sport</span>
+                <span class="cat-link">Made in KZ</span>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mega Menu -->
+    <div class="mega-menu" id="megaMenu">
+        <div class="mega-menu-container">
+            <div class="mega-menu-grid">
+                <div>
+                    <h3 class="mega-menu-title">Clothes</h3>
+                    <ul class="mega-menu-list">
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Outerwear</a></li>
+                        <li><a href="#">Jumpers, sweaters, cardigans</a></li>
+                        <li><a href="#">Jeans</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mega-menu-title">Shoes</h3>
+                    <ul class="mega-menu-list">
+                        <li><a href="#">Boots</a></li>
+                        <li><a href="#">Sneakers</a></li>
+                        <li><a href="#">Shoes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mega-menu-title">Accessories</h3>
+                    <ul class="mega-menu-list">
+                        <li><a href="#">Underwear</a></li>
+                        <li><a href="#">Headwear</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mega-menu-title">&nbsp;</h3>
+                    <ul class="mega-menu-list">
+                        <li><a href="#">Premium</a></li>
+                        <li><a href="#">Sport</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <img src="../images/aboutushero.png" alt="About Trendora">
+                <div class="hero-overlay">
+                </div>
+            </section>
+
+            <!-- Info Section -->
+            <section class="info-section">
+                <div class="info-section-inner">
+                    <div class="year-label">
+                        <div class="year-number">2010</div>
+                        <div class="year-line"></div>
+                    </div>
+
+                    <div class="info-grid">
+                        <div class="info-column">
+                            <div class="info-subsection">
+                                <h3>Fashion with meaning</h3>
+                                <p>Founded in 2010, Trendora has demonstrated its ability to combine quality, comfort, and design, so you can find what you need in just a few clicks.</p>
+                            </div>
+
+                            <div class="info-with-icon">
+                                <div class="big-number">125+</div>
+                                <div class="trendoraCar">
+                                    <img src="../images/trendoraCar.png" alt="About Trendora">
+                                    <p class="info-text">More trendy and high-quality pieces delivered quickly and safely, thanks to our trusted suppliers - from our store straight to your door.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-column">
+                            <div class="info-subsection story-heading">
+                                <h3>Our Brief Story</h3>
+                            </div>
+                            <p class="story-text">Our designs focused on elegance in simplicity – crisp lines, neutral tones, and clothes that made people feel good just by wearing them. Each piece carried their small stitched message: "Style starts with self-respect."<br><br>Soon, Neat And Haute wasn't just a brand – it became a quiet revolution. People stopped buying loud logos and started choosing looks that spoke softly but powerfully.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Values Section -->
+            <section class="values-section">
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <img src="../images/sustainability.png" alt="Trendora logo" class="logo-img" width="120" height="40">
+                        </div>
+                        <div class="value-name">Sustainability</div>
+                        <div class="value-description">We are for a green world</div>
+                    </div>
+
+                    <div class="value-item">
+                        <div class="value-icon heart">
+                            <img src="../images/authenticity.png" alt="Trendora logo" class="logo-img" width="120" height="40">
+                        </div>
+                        <div class="value-name">Authenticity</div>
+                        <div class="value-description">Only original and quality</div>
+                    </div>
+
+                    <div class="value-item">
+                        <div class="value-icon sparkles">
+                            <img src="../images/creativity.png" alt="Trendora logo" class="logo-img" width="120" height="40">
+                        </div>
+                        <div class="value-name">Creativity</div>
+                        <div class="value-description">Every image is a part of fashion history</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="team-section">
+                <h2 class="team-title">Meet the team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="../images/aristarh.png" alt="Tarasov Aristarh">
+                        </div>
+                        <p class="member-name">Tarasov Aristarh</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="../images/ismail.png" alt="Ismail Umbetkaliev">
+                        </div>
+                        <p class="member-name">Ismail Umbetkaliev</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="../images/esbatyr.png" alt="Meirzhan Esbatyr">
+                        </div>
+                        <p class="member-name">Meirzhan Esbatyr</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="../images/hamit.png" alt="Marat Hamit">
+                        </div>
+                        <p class="member-name">Marat Hamit</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="../images/altayir.png" alt="Maksot Altayir">
+                        </div>
+                        <p class="member-name">Maksot Altayir</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4 class="footer-h4">10% discount for subscribing to new releases and promotions</h4>
+                <div class="subscribe-form">
+                    <input type="email" class="email-input" placeholder="Email">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+                <a href="#" class="terms-link">Terms of the promotion</a>
+            </div>
+
+            <div>
+                <h4 class="footer-h4">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Order status by number</a></li>
+                    <li><a href="#">My Orders</a></li>
+                    <li><a href="#">Delivery terms</a></li>
+                    <li><a href="#">Return</a></li>
+                    <li><a href="#">How to place an order</a></li>
+                    <li><a href="#">Trendora Support Center</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="footer-section">
+                    <h4 class="footer-h4">About us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Public offer</a></li>
+                        <li><a href="#">Vacancies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-h4">Partners</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Become a marketplace seller</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let mobileMenuOpen = false;
+        let profileMenuOpen = false;
+        let megaMenuOpen = false;
+
+        function toggleMobileMenu() {
+            mobileMenuOpen = !mobileMenuOpen;
+            const mobileMenu = document.getElementById('mobileMenu');
+            const burgerBtn = document.getElementById('burgerBtn');
+            
+            if (mobileMenuOpen) {
+                mobileMenu.classList.add('open');
+            } else {
+                mobileMenu.classList.remove('open');
+            }
+        }
+
+        function toggleProfileMenu() {
+            profileMenuOpen = !profileMenuOpen;
+            const profileMenu = document.getElementById('profileMenu');
+            
+            if (profileMenuOpen) {
+                profileMenu.classList.add('active');
+                megaMenuOpen = false;
+                document.getElementById('megaMenu').classList.remove('active');
+            } else {
+                profileMenu.classList.remove('active');
+            }
+        }
+
+        function closeProfileMenu() {
+            profileMenuOpen = false;
+            document.getElementById('profileMenu').classList.remove('active');
+        }
+
+        function toggleMegaMenu() {
+            megaMenuOpen = !megaMenuOpen;
+            const megaMenu = document.getElementById('megaMenu');
+            
+            if (megaMenuOpen) {
+                megaMenu.classList.add('active');
+                profileMenuOpen = false;
+                document.getElementById('profileMenu').classList.remove('active');
+            } else {
+                megaMenu.classList.remove('active');
+            }
+        }
+
+        // Close menus when clicking outside
+        document.addEventListener('click', function(event) {
+            const profileTrigger = document.getElementById('profileTrigger');
+            const profileMenu = document.getElementById('profileMenu');
+            const newBtn = document.getElementById('newBtn');
+            const megaMenu = document.getElementById('megaMenu');
+
+            if (!profileTrigger.contains(event.target) && !profileMenu.contains(event.target)) {
+                profileMenuOpen = false;
+                profileMenu.classList.remove('active');
+            }
+
+            if (!newBtn.contains(event.target) && !megaMenu.contains(event.target)) {
+                megaMenuOpen = false;
+                megaMenu.classList.remove('active');
+            }
+        });
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined' && lucide.createIcons) lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* Payment Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.payment-modal {
+    background-color: white;
+    width: 100%;
+    max-width: 900px; /* Wider to accommodate 3 items per row comfortably */
+    border-radius: 12px;
+    padding: 48px 64px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: var(--color-text);
+}
+
+.payment-section {
+    margin-bottom: 32px;
+}
+
+.section-label {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.payment-options-row {
+    display: flex;
+    gap: 48px; /* Spacing between options */
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--color-gray-400);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.payment-option input[type="radio"] {
+    display: none;
+}
+
+.payment-option input[type="radio"]:checked + .radio-custom {
+    border-color: var(--color-black);
+    background-color: var(--color-black); /* Image shows black filled circle */
+}
+
+.payment-option input[type="radio"]:checked + .radio-custom::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: white; /* White dot inside black circle */
+    border-radius: 50%;
+}
+
+.payment-logo {
+    border: 1px solid var(--color-gray-200);
+    border-radius: 6px;
+    padding: 12px 24px;
+    height: 60px;
+    width: 160px; /* Fixed width for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: border-color 0.2s;
+}
+
+/* Optional: Highlight logo box when selected */
+.payment-option input[type="radio"]:checked ~ .payment-logo {
+    border-color: var(--color-black);
+}
+
+.payment-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 48px;
+}
+
+.next-btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 12px 48px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.next-btn:hover {
+    opacity: 0.9;
+}

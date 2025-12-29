@@ -1,0 +1,840 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.page-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: white;
+}
+
+/* =============== HEADER (Same as product listing) =============== */
+.header {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background: white;
+}
+
+.logo {
+    position: absolute;
+    left: 42px;
+    top: 7px;
+    width: 77px;
+    height: 77px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.location {
+    position: absolute;
+    left: 161px;
+    top: 41px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.location-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.top-nav {
+    position: absolute;
+    left: 50%;
+    top: 34px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.63);
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: black;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 64px;
+    height: 1px;
+    background-color: black;
+}
+
+.header-actions {
+    position: absolute;
+    right: 136px;
+    top: 37px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-link {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.register-btn {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    padding: 8px 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.black-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 61px;
+    background-color: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+.bottom-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-nav a {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.bottom-nav a:hover {
+    opacity: 0.8;
+}
+
+.search-container {
+    position: relative;
+    width: 258px;
+    height: 29px;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    padding-left: 22px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.47);
+}
+
+.search-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 29px;
+    background-color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =============== BREADCRUMB =============== */
+.breadcrumb {
+    padding: 20px 0 0 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+/* =============== PRODUCT DETAIL =============== */
+.product-detail {
+    display: flex;
+    gap: 60px;
+    padding: 40px 60px;
+}
+
+.product-images {
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.thumbnail {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+    border-color: black;
+}
+
+.main-image {
+    width: 450px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info-detail {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.rating-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.rating-text {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+.product-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.product-type {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.product-price {
+    font-family: 'Jost', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.currency {
+    font-size: 28px;
+    margin-left: 5px;
+}
+
+.product-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.color-selector {
+    display: flex;
+    align-items: center;
+}
+
+.color-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    background: white;
+}
+
+.color-option.selected {
+    border-color: black;
+}
+
+.color-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.color-option span {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    flex: 1;
+}
+
+.size-selector {
+    width: 100%;
+    max-width: 300px;
+}
+
+.size-dropdown {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+    background: white;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 50px;
+}
+
+.size-dropdown:focus {
+    outline: none;
+    border-color: black;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.add-to-cart {
+    flex: 1;
+    max-width: 220px;
+    padding: 14px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+
+.wishlist-detail {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.wishlist-detail:hover {
+    background-color: #f5f5f5;
+}
+
+/* =============== SIMILAR PRODUCTS =============== */
+.similar-products {
+    padding: 50px 60px;
+    background-color: #fafafa;
+}
+
+.section-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.similar-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.similar-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.similar-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.similar-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.similar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wishlist-small {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.badge-small {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 3px 8px;
+    background-color: #ff4c1f;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    border-radius: 2px;
+}
+
+.similar-info {
+    padding: 12px;
+}
+
+.similar-brand {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.similar-price {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+/* =============== REVIEWS SECTION =============== */
+.reviews-section {
+    padding: 50px 60px;
+    background: white;
+}
+
+.overall-rating {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    gap: 60px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+.rating-summary {
+    text-align: center;
+}
+
+.rating-number {
+    font-family: 'Jost', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.rating-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stars-display {
+    color: #FFD700;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.rating-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.rating-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bar-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: #666;
+    width: 20px;
+}
+
+.bar-container {
+    flex: 1;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #FFD700;
+    border-radius: 4px;
+    transition: width 0.3s;
+}
+
+.size-eligibility {
+    padding-top: 10px;
+}
+
+.eligibility-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.size-scale {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.scale-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    color: #999;
+}
+
+.scale-bar {
+    flex: 1;
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    position: relative;
+}
+
+.scale-marker {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.review-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.sort-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-dropdown label {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+.sort-dropdown select {
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.review-item {
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.reviewer-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.review-meta {
+    display: flex;
+    gap: 15px;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+
+.verified {
+    color: #00b612;
+}
+
+.review-rating {
+    color: #FFD700;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.review-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* =============== FOOTER =============== */
+.footer {
+    width: 100%;
+    background-color: #191919;
+    padding: 50px 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.17);
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.footer-section h4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.email-input {
+    margin-top: 25px;
+    position: relative;
+}
+
+.email-input label {
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.email-input input {
+    width: 100%;
+    max-width: 250px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.51);
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    padding-bottom: 8px;
+    outline: none;
+}
+
+.subscribe-btn {
+    margin-top: 15px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    padding: 6px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.terms {
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+    margin-top: 12px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-section ul li a:hover {
+    opacity: 0.7;
+}

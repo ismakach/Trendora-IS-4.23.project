@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendora - Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="register.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="site-wrapper">
+    
+    <!-- Header Nav (from PageTwo, modified for logged out state) -->
+    <header class="main-header">
+      <div class="container header-inner">
+        <div class="flex items-center">
+          <div class="logo-img">
+            <img src="../images/logoTrendora.png" alt="Trendora logo" class="logo-img" width="120" height="40">
+          </div>
+          <!-- Burger Menu Button (Mobile Left) -->
+          <button class="burger-btn" style="margin-right: 16px;">
+            <i data-lucide="menu" class="burger-icon"></i>
+          </button>
+
+          <div class="logo-container">
+            <!-- Location Display -->
+            <div class="location-display">
+              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+              <span>Atyrau</span>
+            </div>
+          </div>
+        </div>
+        
+        <nav class="nav-links">
+          <a href="../trendoraPageOne/PageOne.html" class="nav-link">Home</a>
+          <a href="../trendoraAboutUs/about-us.html" class="nav-link">About us</a>
+          <a href="../trendoraPageTwo/pagetwo.html" class="nav-link">Women</a>
+          <a href="../TrendoraMproduct2/mproduct2.html" class="nav-link">Men</a>
+        </nav>
+
+        <div class="header-actions">
+           <!-- Replaced Profile with Login/Register -->
+           <a href="#" class="btn-login" style="margin-right: 16px; font-weight: 500;">Login</a>
+           <button class="btn-register">Register</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu (Left) -->
+    <div class="mobile-menu">
+      <a href="#" class="mobile-nav-link">Home</a>
+      <a href="#" class="mobile-nav-link">About us</a>
+      <a href="#" class="mobile-nav-link">Women</a>
+      <a href="#" class="mobile-nav-link">Men</a>
+      <hr style="border-color: var(--color-gray-100);">
+      <a href="#" class="mobile-nav-link">Login</a>
+      <a href="#" class="mobile-nav-link">Register</a>
+    </div>
+
+    <!-- Red Banner -->
+    <div class="promo-banner">
+      The cold weather is coming, time to warm up with discounts of up to 50%
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="categories-list">
+          <button class="cat-link-btn cat-link">
+            New
+          </button>
+          <span class="cat-link">Clothes</span>
+          <span class="cat-link">Shoes</span>
+          <span class="cat-link">Accessories</span>
+          <span class="cat-link">Brand</span>
+          <span class="cat-link">Premium</span>
+          <span class="cat-link">Sport</span>
+          <span class="cat-link">Made in KZ</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search" class="search-input">
+          <button class="search-btn">
+            <i data-lucide="search" style="width: 14px; height: 14px;"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mega Menu Dropdown -->
+    <div class="mega-menu">
+      <div class="container">
+        <div class="mega-menu-grid">
+          <div class="mega-menu-col">
+            <h3 class="mega-menu-title">Clothes</h3>
+            <ul class="mega-menu-list">
+              <li><a href="#">Pants</a></li>
+              <li><a href="#">Outerwear</a></li>
+              <li><a href="#">Jumpers, sweaters, cardigans</a></li>
+              <li><a href="#">Jeans</a></li>
+            </ul>
+          </div>
+          <div class="mega-menu-col">
+            <h3 class="mega-menu-title">Shoes</h3>
+            <ul class="mega-menu-list">
+              <li><a href="#">Boots</a></li>
+              <li><a href="#">Sneakers</a></li>
+              <li><a href="#">Shoes</a></li>
+            </ul>
+          </div>
+          <div class="mega-menu-col">
+            <h3 class="mega-menu-title">Accessories</h3>
+            <ul class="mega-menu-list">
+              <li><a href="#">Underwear</a></li>
+              <li><a href="#">Headwear</a></li>
+            </ul>
+          </div>
+            <div class="mega-menu-col">
+              <h3 class="mega-menu-title">&nbsp;</h3>
+              <ul class="mega-menu-list">
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Sport</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content (Registration Form) -->
+    <div class="split-container">
+        <!-- Left Side - Image -->
+        <div class="image-section">
+            <img src="../images/registerImage.png" alt="Fashion Store">
+            <div class="image-overlay"></div>
+            <div class="image-text">
+                <h1>Join the Trendora Community</h1>
+            </div>
+        </div>
+
+        <!-- Right Side - Form -->
+        <div class="form-section">
+            <div class="form-container">
+                <h2 class="form-title">Registration</h2>
+
+                <form class="form-grid" onsubmit="event.preventDefault();">
+                    <div>
+                        <label class="form-label">First Name</label>
+                        <input type="text" placeholder="No" class="form-input">
+                    </div>
+
+                    <div>
+                        <label class="form-label">Last Name</label>
+                        <input type="text" placeholder="No" class="form-input">
+                    </div>
+
+                    <div>
+                        <label class="form-label">Username</label>
+                        <input type="text" placeholder="No" class="form-input">
+                    </div>
+
+                    <div>
+                        <label class="form-label">Email</label>
+                        <input type="email" placeholder="Noname@gmail.com" class="form-input">
+                    </div>
+
+                    <div class="password-group">
+                        <label class="form-label">Password</label>
+                        <input type="password" placeholder="Password" class="form-input" id="pwd1">
+                        <button type="button" class="toggle-password" onclick="togglePassword('pwd1', 'eye1')">
+                            <i data-lucide="eye" id="eye1" size="16"></i>
+                        </button>
+                    </div>
+
+                    <div class="password-group">
+                        <label class="form-label">Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password" class="form-input" id="pwd2">
+                        <button type="button" class="toggle-password" onclick="togglePassword('pwd2', 'eye2')">
+                            <i data-lucide="eye" id="eye2" size="16"></i>
+                        </button>
+                    </div>
+
+                    <div>
+                        <label class="form-label">Telephone Number</label>
+                        <input type="tel" placeholder="000111222333" class="form-input">
+                    </div>
+
+                    <div>
+                        <label class="form-label">Gender</label>
+                        <div class="gender-group">
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="male">
+                                Male
+                            </label>
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="female">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="form-label">Birth Date</label>
+                        <input type="date" class="form-input" value="2002-07-05">
+                    </div>
+
+                    <button type="submit" class="submit-btn">REGISTER</button>
+                </form>
+
+                <div class="divider">
+                    <span class="divider-text">Or login with</span>
+                </div>
+
+                <div class="social-login">
+                    <button type="button" class="social-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.766 12.2764C23.766 11.4607 23.6999 10.6406 23.5588 9.83807H12.24V14.4591H18.7217C18.4528 15.9494 17.5885 17.2678 16.323 18.1056V21.1039H20.19C22.4608 19.0139 23.766 15.9274 23.766 12.2764Z" fill="#4285F4"/>
+                            <path d="M12.24 24.0008C15.4765 24.0008 18.2058 22.9382 20.1945 21.1039L16.3275 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.24 24.0008Z" fill="#34A853"/>
+                            <path d="M5.50253 14.3003C5.00236 12.8199 5.00236 11.1799 5.50253 9.69951V6.60861H1.5166C-0.185402 10.0055 -0.185402 13.9945 1.5166 17.3914L5.50253 14.3003Z" fill="#FBBC05"/>
+                            <path d="M12.24 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.0344664 12.24 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.60861L5.50253 9.69951C6.45064 6.86183 9.10947 4.74966 12.24 4.74966Z" fill="#EA4335"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="social-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.0733C24 5.40579 18.6274 0 12 0C5.37258 0 0 5.40579 0 12.0733C0 18.1003 4.38823 23.0936 10.125 24V15.562H7.07813V12.0733H10.125V9.41275C10.125 6.38663 11.9165 4.71589 14.6576 4.71589C15.9705 4.71589 17.3438 4.95179 17.3438 4.95179V7.92263H15.8306C14.3399 7.92263 13.875 8.85279 13.875 9.80741V12.0733H17.2031L16.6711 15.562H13.875V24C19.6118 23.0936 24 18.1003 24 12.0733Z" fill="#1877F2"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="auth-link">
+                    Already have an account ? <a href="#">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (from PageTwo) -->
+    <footer class="footer">
+        <div class="container footer-grid">
+          
+          <div style="padding-right: 80px;">
+            <h4 class="footer-h4">10% discount for subscribing to new releases and promotions</h4>
+            <div class="subscribe-form">
+              <input type="email" placeholder="Email" class="email-input" />
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+            <p class="text-gray" style="font-size: 10px; margin-top: 8px;">Terms of the promotion</p>
+          </div>
+
+          <div>
+            <h4 class="footer-h4">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">Order status by number</a></li>
+              <li><a href="#">My Orders</a></li>
+              <li><a href="#">Delivery terms</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">How to place an order</a></li>
+              <li><a href="#">Trendora Support Center</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-h4">About us</h4>
+            <ul class="footer-links" style="margin-bottom: 32px;">
+              <li><a href="#">Public offer</a></li>
+              <li><a href="#">Vacancies</a></li>
+            </ul>
+
+            <h4 class="footer-h4">Partners</h4>
+            <ul class="footer-links">
+              <li><a href="#">Become a marketplace seller</a></li>
+              <li><a href="#">FAQ's</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </footer>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+</html>
